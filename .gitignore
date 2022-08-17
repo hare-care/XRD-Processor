@@ -7,3 +7,6 @@ venv/
 
 #raw xrd files
 *.X01
+
+# ds_store files
+.DS_Store
