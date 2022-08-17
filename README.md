@@ -1,15 +1,19 @@
 # XRD-Processor
 Code to proceed XRD data in the lab so I don't have to do manual calculations for my superlattice(SL) samples.
-Version 0.2
+Version 0.3
 
 ## Requirements:
-Python 3.x | Packages: math, sys
+Matlab | Python 3.x | Packages: math, sys
+
 
 ## How to use:
-Obtain angle values via some other tool.
-Navigate to repo and run main.py with values, example shown below:
+Run xrd_processor with matlab, passing xrd data as a parameter
 ```
-python3 main.py 1 2 3 4
+xrd_processor('file_name.x01')
+```
+Run matlab.py and chart will be displayed
+```
+python3 matlab.py
 ```
 Results will be printed to terminal.
 4 arguments must be included; the first left peak, the main peak, the substrate peak, and first right peak
