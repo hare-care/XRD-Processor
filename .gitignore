@@ -1,0 +1,6 @@
+
+#virtual envs
+venv/
+
+#matlab data
+*.mat
