@@ -43,9 +43,7 @@ Using the same code as in matlab but translated into python, the values may be c
 I dont want to do the same calculations all the time, so we automate. 
 In my lab we use XRD (X-ray Diffraction) to verify structural information about our sample. The xrd machine outputs a .X01 data file and then it connects to some very old computer. We then use it to find the different peaks like the SL peak, substrate peak, and the n = -1, +1 peaks. From there we want the lattice constants for the SL and the substrate, lattice mismatch, and SL thickness.
 
-This version requires some previous analysis to work which is not ideal. So it is still in testing phases but it gets the job done for me, 
-as in it will give me the calculations. Right now it is a glorified calculator, just uses some equations based off the inputs. 
-The inputs are the various theta values for the the peaks. You can also input the other values like lambda or hkl, but we dont change those in my lab. So I just keep it the same. 
+Rather than doing this manually, I wanted to automate the process. Plug in the xrd data and get your analysis out. Thats the goal of this project. 
 
 ## Methods
 
