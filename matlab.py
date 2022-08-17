@@ -1,8 +1,6 @@
 import scipy.io as spio
 import matplotlib.pyplot as plt
-import os
 
-import numpy as np
 
 #load in a matlab file in the same folder
 mat = spio.loadmat('xrd_data.mat', squeeze_me=True)
