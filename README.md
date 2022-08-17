@@ -2,7 +2,7 @@
 Code to process XRD data in the lab so I don't have to do manual calculations for my superlattice(SL) samples.
 Version 0.3
 
-![My Image](my-image.jpg)
+![My Image](images/flowchart.jpg)
 
 ## Requirements:
 Matlab | Python 3.x | Packages: math, sys, scipy, matplotlib
