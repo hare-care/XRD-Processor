@@ -3,20 +3,36 @@ Code to proceed XRD data in the lab so I don't have to do manual calculations fo
 Version 0.3
 
 ## Requirements:
-Matlab | Python 3.x | Packages: math, sys
+Matlab | Python 3.x | Packages: math, sys, scipy, matplotlib
 
 
 ## How to use:
-Run xrd_processor with matlab, passing xrd data as a parameter
+### Making Automatic Chart
+Take xrd data file and place into xrd_raw folder
+Naviagate to this repo in Matlab and run the following command (replacing filename with actual name)
 ```
-xrd_processor('file_name.x01')
+xrd_processor('xrd_raw/filename.x01')
 ```
-Run matlab.py and chart will be displayed
+Open a terminal and run matlab.py with python like the following. This may vary depending on your path setup
 ```
 python3 matlab.py
 ```
-Results will be printed to terminal.
-4 arguments must be included; the first left peak, the main peak, the substrate peak, and first right peak
+A chart will appear with the peaks labelled.
+
+### Calculating Values via terminal
+Navigate to the repo in your terminal and run main.py using python and 4 angles as arguments
+```
+python3 main.py left_peak main_peak substrate_peak right_peak 
+```
+REPLACE 'left_peak main_peak substrate_peak and right_peak' with their actual angle values
+
+### Calculating Values via Matlab
+If you need the lattice constants they can be found in the matlab terminal after running xrd_processor or can be found using main.py.
+In addition you may run xrd_calc in matlab to find values for your angles. The 4 peak values are required, but aditional arguments may be specified such as xrd_wavelength, n, and h k & l values.
+See the matlab file for more information
+
+### Calculating Values via Python
+Using the same code as in matlab but translated into python, the values may be calculated. In main.py you can use the calc() function to find your values. 
 
 
 
