@@ -1,5 +1,5 @@
 # XRD-Processor
-Code to proceed XRD data in the lab so I don't have to do manual calculations for my superlattice(SL) samples.
+Code to process XRD data in the lab so I don't have to do manual calculations for my superlattice(SL) samples.
 Version 0.3
 
 ## Requirements:
