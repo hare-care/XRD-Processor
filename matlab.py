@@ -7,10 +7,15 @@ import numpy as np
 #load in a matlab file in the same folder
 mat = spio.loadmat('xrd_data.mat', squeeze_me=True)
 #extracting data from matlab file
+#angles aka x values
 angles = mat['angles']
+#data aka y values
 datavector = mat['datavector']
+#location of peaks x coord
 four_peaks_locs = mat['four_peaks_locs']
+#location of peaks y coord
 four_peaks_height = mat['four_peaks_height']
+#sample number
 sample_number = mat['sample_number']
 
 #setting up plot text
