@@ -1,0 +1,9 @@
+
+#virtual envs
+venv/
+
+#matlab data
+*.mat
+
+#raw xrd files
+*.X01

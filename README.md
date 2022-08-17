@@ -1,18 +1,38 @@
 # XRD-Processor
 Code to proceed XRD data in the lab so I don't have to do manual calculations for my superlattice(SL) samples.
-Version 0.2
+Version 0.3
 
 ## Requirements:
-Python 3.x | Packages: math, sys
+Matlab | Python 3.x | Packages: math, sys, scipy, matplotlib
+
 
 ## How to use:
-Obtain angle values via some other tool.
-Navigate to repo and run main.py with values, example shown below:
+### Making Automatic Chart
+Take xrd data file and place into xrd_raw folder
+Naviagate to this repo in Matlab and run the following command (replacing filename with actual name)
 ```
-python3 main.py 1 2 3 4
+xrd_processor('xrd_raw/filename.x01')
 ```
-Results will be printed to terminal.
-4 arguments must be included; the first left peak, the main peak, the substrate peak, and first right peak
+Open a terminal and run matlab.py with python like the following. This may vary depending on your path setup
+```
+python3 matlab.py
+```
+A chart will appear with the peaks labelled.
+
+### Calculating Values via terminal
+Navigate to the repo in your terminal and run main.py using python and 4 angles as arguments
+```
+python3 main.py left_peak main_peak substrate_peak right_peak 
+```
+REPLACE 'left_peak main_peak substrate_peak and right_peak' with their actual angle values
+
+### Calculating Values via Matlab
+If you need the lattice constants they can be found in the matlab terminal after running xrd_processor or can be found using main.py.
+In addition you may run xrd_calc in matlab to find values for your angles. The 4 peak values are required, but aditional arguments may be specified such as xrd_wavelength, n, and h k & l values.
+See the matlab file for more information
+
+### Calculating Values via Python
+Using the same code as in matlab but translated into python, the values may be calculated. In main.py you can use the calc() function to find your values. 
 
 
 
@@ -43,9 +63,7 @@ thickness = abs(-lambda/(2*(sind(sl1p)-sind(sl0))));   // sind is sin() but in d
 
 
 ## Future Development:
-I want to just input the file produced by the XRD machine and have the code find the peaks, angles, and values I need.
-If possible I'd also love to graph it and then label it appropriately, but I have a feeling MATLAB cant do that effectively.
-I might change this to a python project, depending on how it goes. 
+This curently works with a certain type of sample we have used in the lab, LWIR samples with only one supperlatice present. In the future, I would want this to work with mutiple types of samples and possibly have inputs for what kind of smaple it is. 
 
 
 

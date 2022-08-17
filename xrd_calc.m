@@ -6,8 +6,7 @@ function [mismatch, suba, SLa, thickness] = xrd_calc(sl1n, sl0, sub, sl1p, lambd
 
 % setting up standard arguments
 theta = sl0;
-if nargin < 5
-    lambda = 1.54; 
+if nargin < 6
     n = 1;
     h = 0;
     k = 0;
