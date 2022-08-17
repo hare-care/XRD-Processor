@@ -63,9 +63,7 @@ thickness = abs(-lambda/(2*(sind(sl1p)-sind(sl0))));   // sind is sin() but in d
 
 
 ## Future Development:
-I want to just input the file produced by the XRD machine and have the code find the peaks, angles, and values I need.
-If possible I'd also love to graph it and then label it appropriately, but I have a feeling MATLAB cant do that effectively.
-I might change this to a python project, depending on how it goes. 
+This curently works with a certain type of sample we have used in the lab, LWIR samples with only one supperlatice present. In the future, I would want this to work with mutiple types of samples and possibly have inputs for what kind of smaple it is. 
 
 
 
